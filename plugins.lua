@@ -42,7 +42,9 @@ packer.init({
 return packer.startup(function(use)
 	use ("wbthomason/packer.nvim") -- Have packer manage itself	
 
-
+    use("nvim-lua/plenary.nvim") -- Lua functions that Telescope plugin use
+    use("BurntSushi/ripgrep")
+	use("nvim-telescope/telescope.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

@@ -1,7 +1,7 @@
-# Directory Structure
+```
+sudo bash nvimInstall.sh
+```
 
-~/.config
-    -> nvim
-        -> init.vim
-        -> lua
-            -> plugins.lua
+```
+./nvimConfig.sh
+```
