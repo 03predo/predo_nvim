@@ -44,8 +44,9 @@ return packer.startup(function(use)
 
     use("nvim-lua/plenary.nvim") -- Lua functions that Telescope plugin use
     use("BurntSushi/ripgrep")
-	use("nvim-telescope/telescope.nvim")
+    use("nvim-telescope/telescope.nvim")
     use("sindrets/Diffview.nvim")
+    use("preservim/nerdtree")
 
 
 
