@@ -38,6 +38,10 @@ packer.init({
 	},
 })
 
+local actions = require("diffview.actions")
+
+require("diffview").setup({})
+
 -- Install your plugins here
 return packer.startup(function(use)
 	use ("wbthomason/packer.nvim") -- Have packer manage itself	
@@ -45,6 +49,7 @@ return packer.startup(function(use)
     use("nvim-lua/plenary.nvim") -- Lua functions that Telescope plugin use
     use("BurntSushi/ripgrep")
 	use("nvim-telescope/telescope.nvim")
+    use("sindrets/Diffview.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
