@@ -5,7 +5,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-lua require("plugins")
+lua require("config.lazy")
 
 nmap <C-t> :Telescope <Enter>
 nmap <C-p> :Telescope find_files <Enter>
