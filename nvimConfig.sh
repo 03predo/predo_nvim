@@ -1,19 +1,10 @@
 #!/bin/bash
 
-mkdir -p ~/.config/nvim/lua/config
-mkdir -p ~/.config/nvim/lua/plugins
+mkdir -p ~/.config
 
-if ! [ -f ~/.config/nvim/init.vim ]; then
-  cp init.vim ~/.config/nvim
+if ! [ -f ~/.config/nvim ]; then
+  rm -rf ~/.config/nvim
 fi
 
-if ! [ -f ~/.config/nvim/lua/config/lazy.lua ]; then
-  cp lazy.lua ~/.config/nvim/lua/config/lazy.lua
-fi
-
-if ! [ -f ~/.config/nvim/lua/plugins/spec.lua ]; then
-  cp lazy.lua ~/.config/nvim/lua/plugins/spec.lua
-fi
-
-
-
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ln -s $SCRIPT_DIR ~/.config/nvim
