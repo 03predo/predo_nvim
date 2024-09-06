@@ -41,6 +41,12 @@ return {
   },
 
   {
+    "neoclide/coc.nvim",
+    branch = "release",
+    lazy = false,
+  },
+
+  {
     "kevinhwang91/promise-async",
     lazy = false,
   },
