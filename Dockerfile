@@ -22,11 +22,5 @@ RUN curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appi
 
 RUN git clone https://github.com/03predo/predo_nvim.git
 
-
-# RUN mkdir -p /root/.config/nvim/lua/config && \
-#     mkdir -p /root/.config/nvim/lua/plugins
-# 
-# RUN cp /predo_nvim/init.vim /root/.config/nvim && \
-#     cp /predo_nvim/lazy.lua /root/.config/nvim/lua/config && \
-#     cp /predo_nvim/spec.lua /root/.config/nvim/lua/plugins
+RUN ./predo_nvim/nvimConfig.sh
 
