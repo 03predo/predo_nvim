@@ -2,6 +2,8 @@
 
 # install nvim
 if ! [ -f $HOME/.local/bin/nvim ]; then
+    mkdir -p ~/.local/bin
+
     curl -LO 'https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz'
     tar xf ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz
     ln -s $PWD/ripgrep-13.0.0-x86_64-unknown-linux-musl/rg ~/.local/bin/rg
