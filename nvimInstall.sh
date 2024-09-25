@@ -14,6 +14,7 @@ if ! [ -f $HOME/.local/bin/nvim ]; then
     ./squashfs-root/AppRun --version
     ln -s $PWD/squashfs-root/AppRun ~/.local/bin/nvim
     echo "export PATH="\$HOME/.local/bin:\$PATH"" >> $HOME/.bashrc
+    . $HOME/.bashrc
 fi
 
 # config nvim
