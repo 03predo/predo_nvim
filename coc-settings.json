@@ -1,4 +1,5 @@
 {
+  "pylsp.plugins.pycodestyle.enabled": false,
   "suggest.noselect": true,
   "languageserver": {
     "clangd": {
