@@ -8,10 +8,12 @@ local M = {
 		"hrsh7th/cmp-cmdline",
 		"saadparwaiz1/cmp_luasnip",
 		"L3MON4D3/LuaSnip",
+    "neovim/nvim-lspconfig",
 	},
 }
 
-M.config = function()
+M.opts = function()
+
 	local cmp = require("cmp")
 	vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
@@ -58,6 +60,7 @@ M.config = function()
 			{ name = "cmdline" },
 		}),
 	})
+
 end
 
 return M
